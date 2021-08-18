@@ -12,11 +12,16 @@ $(document).ready(function(){
 
     });
 
+    $("Select2").select2({
+        placeholder: "Select a state",
+        allowClear: true
+    });
+
     function populate()  {
 
 
-        var s1 = $('#select1');
-        var s2 = $('#select2');
+        var s1 = $('#slect1');
+        var s2 = $('#slect2');
 
         if (s1.val == "['United States','US']") {
             var optionArray = [
