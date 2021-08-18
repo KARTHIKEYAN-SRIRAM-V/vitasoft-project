@@ -43,34 +43,34 @@
             id="firstname"
             type="text"
             class="firstname"
-            placeholder="First Name"
+            placeholder="First Name*"
             type="text"
             required
-          /><br />
+          />
 
           <input
             type="text"
             class="middlename"
-            name="middletname"
-            placeholder="Middle Name"
+            name="middlename"
+            placeholder="Middle Name*"
             type="text"
             required
-          /><br />
+          />
 
           <input
             type="text"
             class="lastname"
-            name="lasttname"
-            placeholder="Last Name"
+            name="lastname"
+            placeholder="Last Name*"
             type="text"
             required
-          /><br />
+          />
 
           <input
             type="text"
             class="address"
             name="address"
-            placeholder="Address"
+            placeholder="Address*"
             type="text"
             required
           />
@@ -80,8 +80,8 @@
             name="select1"
             class="countrydd"
             onchange="populate('select1','select2')"
-          >
-            <option value="">Select Country</option>
+          required>
+            <option value="">Select Country*</option>
             <option value="['Nigeria','NG']">Nigeria</option>
             <option value="['Afghanistan','AF']">Afghanistan</option>
             <option value="['Ãƒâ€¦land Islands','AX']">
@@ -428,18 +428,33 @@
             <option value="['Western Sahara','EH']">Western Sahara</option>
             <option value="['Yemen','YE']">Yemen</option>
             <option value="['Zambia','ZM']">Zambia</option>
-            <option value="['Zimbabwe','ZW']">Zimbabwe</option></select
-          ><br />
+            <option value="['Zimbabwe','ZW']">Zimbabwe</option></select>
 
-          <input class="box" id="ipst" type="text" browsers" name="myBrowser" />
-
-          <select class="box overtop" id="slect2">
+          <select class="overtop" id="slect2" required>
 
             <option></option>
           </select>
 
+          <input id="ip1" type="text" placeholder="Zip Code*" required>
+
+          <input id="ip2" type="email" placeholder="Email*" required>
+
+          <input id="ip3" type="number" placeholder="Phone Number*" required><br>
+
+          <input id="ip4" type="number" placeholder="Height(Ft/inches)*" required>
+
+          <input id="ip5" type="number" placeholder="Weight(kgs)*" required>
+
           <button type="submit" id="submit">click</button>
-          <h6 id="dispDiv" style="display: none;color:red;">Firstname: <span id="dispFirstname"></span> </h6>
+
+          <div id="od">
+
+          <h6 id="dispDiv1" style="display: none;color:rgb(189, 185, 185);">First Name: <span id="dispfirstname"></span> </h6>
+
+          <h6 id="dispDiv2" style="display: none;color:rgb(189, 185, 185);">Last Name: <span id="dispmiddlename"></span> </h6>
+
+
+        </div>
         </div>
       </div>
     </div>

@@ -3,8 +3,13 @@ $(document).ready(function(){
     function find() {
         
         const firstname = $('#firstname').val();
-        $('#dispFirstname').html(firstname);
-        $('#dispDiv').show();
+        const middlename = $('#middlename').val();
+    
+        $('#dispfirstname').html(firstname);
+        $('#dispDiv1').show();
+
+        $('#dispmiddlename').html(middlename);
+        $('#dispDiv2').show();
     }
 
     $("#submit").click(function(){
@@ -12,7 +17,7 @@ $(document).ready(function(){
 
     });
 
-    $("Select2").select2({
+    $("slect2").select2({
         placeholder: "Select a state",
         allowClear: true
     });
