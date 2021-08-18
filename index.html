@@ -25,26 +25,7 @@
     <script src="./js/app.js"></script>
 
     <script>
-      function populate(s1, s2) {
-        var s1 = document.getElementById(s1);
-        var s2 = document.getElementById(s2);
-        s2.innerHTML = "";
-        if (s1.value == "['United States','US']") {
-          var optionArray = [
-            "|",
-            "camaro|Camaro",
-            "corvette|Corvette",
-            "impala|Impala",
-          ];
-        }
-        for (var option in optionArray) {
-          var pair = optionArray[option].split("|");
-          var newOption = document.createElement("option");
-          newOption.value = pair[0];
-          newOption.innerHTML = pair[1];
-          s2.options.add(newOption);
-        }
-      }
+     
 
       function open() {
         window.open("TRIAL.html");
@@ -98,7 +79,7 @@
             id="select1"
             name="select1"
             class="countrydd"
-            onchange="populate('select1','browsers')"
+            onchange="populate('select1','select2')"
           >
             <option value="">Select Country</option>
             <option value="['Nigeria','NG']">Nigeria</option>
@@ -452,7 +433,7 @@
 
           <input class="box" id="ipst" type="text" browsers" name="myBrowser" />
 
-          <select class="box overtop" id="browsers"></select>
+          <select class="box overtop" id="select2"></select>
 
           <button type="submit" id="submit">click</button>
           <h6 id="dispDiv" style="display: none;color:red;">Firstname: <span id="dispFirstname"></span> </h6>
