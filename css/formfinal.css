@@ -256,3 +256,13 @@ h2{
     margin: 20px 6px 6px 0px;
     z-index: 9;
 }
+
+#dispDiv6{
+
+    display: inline;
+}
+
+#dispphno{
+
+    display: inline;
+}
